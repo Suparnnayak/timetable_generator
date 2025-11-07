@@ -16,6 +16,25 @@ CORS(app)  # Enable CORS for cross-origin requests
 app.config['JSON_SORT_KEYS'] = False
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
+# Root endpoint
+@app.route('/', methods=['GET'])
+def root():
+    """Root endpoint - API information"""
+    return jsonify({
+        'service': 'NEP Timetable Generator API',
+        'version': '1.0.0',
+        'status': 'running',
+        'endpoints': {
+            'GET /': 'This endpoint (API information)',
+            'GET /health': 'Health check',
+            'GET /api/info': 'Detailed API information and schema',
+            'POST /api/validate': 'Validate input JSON structure',
+            'POST /api/generate': 'Generate timetable from JSON input'
+        },
+        'documentation': 'See /api/info for detailed API documentation',
+        'timestamp': datetime.now().isoformat()
+    }), 200
+
 # Health check endpoint
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -98,6 +117,13 @@ def generate_timetable():
         }
         
         # Generate timetable
+        if DualTimetableManager is None:
+            return jsonify({
+                'success': False,
+                'error': 'Timetable manager not available',
+                'message': 'The timetable generation module could not be loaded'
+            }), 500
+        
         manager = DualTimetableManager(input_data)
         result, error = manager.generate(time_limit=time_limit)
         
@@ -254,7 +280,7 @@ def not_found(error):
         'success': False,
         'error': 'Endpoint not found',
         'message': 'The requested endpoint does not exist',
-        'available_endpoints': ['/health', '/api/generate', '/api/validate', '/api/info']
+        'available_endpoints': ['/', '/health', '/api/generate', '/api/validate', '/api/info']
     }), 404
 
 @app.errorhandler(405)
