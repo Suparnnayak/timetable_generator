@@ -1,0 +1,30 @@
+[
+  {
+    "group_id": "G1",
+    "program": "B.Tech CS",
+    "semester": 3,
+    "major": "Computer Science",
+    "minor": "Artificial Intelligence",
+    "credit_requirements": {"min": 11, "max": 20, "major_min": 7, "minor_min": 3, "skill_min": 1},
+    "students": ["S001", "S002", "S003", "S004"],
+    "course_choices": {
+      "major": ["DSA", "OS", "CN"],
+      "minor": ["ML"],
+      "skill": ["SSP"]
+    }
+  },
+  {
+    "group_id": "G2",
+    "program": "B.Tech AI",
+    "semester": 3,
+    "major": "Artificial Intelligence",
+    "minor": "Data Systems",
+    "credit_requirements": {"min": 10, "max": 18, "major_min": 6, "minor_min": 3, "skill_min": 1},
+    "students": ["S010", "S011", "S012"],
+    "course_choices": {
+      "major": ["ML", "DBMS"],
+      "minor": ["DSA", "SE"],
+      "skill": ["SSP"]
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "course_code": "DSA",
+    "name": "Data Structures & Algorithms",
+    "credit_hours": 4,
+    "course_track": "Major",
+    "components": {"theory": 3, "lab": 1},
+    "student_groups": ["G1"],
+    "possible_faculty": ["F001", "F004"],
+    "lab_required": true
+  },
+  {
+    "course_code": "OS",
+    "name": "Operating Systems",
+    "credit_hours": 3,
+    "course_track": "Major",
+    "components": {"theory": 3},
+    "student_groups": ["G1"],
+    "possible_faculty": ["F002", "F005", "F006"]
+  },
+  {
+    "course_code": "ML",
+    "name": "Machine Learning Basics",
+    "credit_hours": 3,
+    "course_track": "Minor",
+    "components": {"theory": 2, "lab": 1},
+    "student_groups": ["G1", "G2"],
+    "possible_faculty": ["F002", "F004"],
+    "lab_required": true
+  },
+  {
+    "course_code": "DBMS",
+    "name": "Database Systems",
+    "credit_hours": 3,
+    "course_track": "Major",
+    "components": {"theory": 3},
+    "student_groups": ["G2"],
+    "possible_faculty": ["F004", "F005"]
+  },
+  {
+    "course_code": "SSP",
+    "name": "Soft Skills & Professionalism",
+    "credit_hours": 1,
+    "course_track": "Skill",
+    "components": {"workshop": 1},
+    "student_groups": ["G1", "G2"],
+    "possible_faculty": ["F003", "F005", "F007"]
+  },
+  {
+    "course_code": "CN",
+    "name": "Computer Networks",
+    "credit_hours": 3,
+    "course_track": "Major",
+    "components": {"theory": 2, "lab": 1},
+    "student_groups": ["G1"],
+    "possible_faculty": ["F006", "F008"],
+    "lab_required": true
+  },
+  {
+    "course_code": "SE",
+    "name": "Software Engineering",
+    "credit_hours": 3,
+    "course_track": "Minor",
+    "components": {"theory": 3},
+    "student_groups": ["G2"],
+    "possible_faculty": ["F005", "F007"]
+  }
+]

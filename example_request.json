@@ -1,0 +1,78 @@
+{
+  "time_slots": [
+    "Mon_09", "Mon_10", "Mon_11", "Mon_12",
+    "Tue_09", "Tue_10", "Tue_11", "Tue_12",
+    "Wed_09", "Wed_10", "Wed_11", "Wed_12",
+    "Thu_09", "Thu_10", "Thu_11", "Thu_12",
+    "Fri_09", "Fri_10", "Fri_11", "Fri_12"
+  ],
+  "courses": [
+    {
+      "course_code": "DSA",
+      "name": "Data Structures & Algorithms",
+      "credit_hours": 4,
+      "course_track": "Major",
+      "components": {"theory": 3, "lab": 1},
+      "student_groups": ["G1"],
+      "possible_faculty": ["F001", "F004"],
+      "lab_required": true
+    },
+    {
+      "course_code": "OS",
+      "name": "Operating Systems",
+      "credit_hours": 3,
+      "course_track": "Major",
+      "components": {"theory": 3},
+      "student_groups": ["G1"],
+      "possible_faculty": ["F002", "F005", "F006"]
+    }
+  ],
+  "faculty": [
+    {
+      "faculty_id": "F001",
+      "name": "Dr. Alpha",
+      "expertise": ["DSA", "SSP"],
+      "available_slots": ["Mon_09", "Mon_10", "Tue_09", "Wed_09", "Thu_09"],
+      "max_hours_per_week": 10
+    },
+    {
+      "faculty_id": "F002",
+      "name": "Dr. Beta",
+      "expertise": ["OS", "ML"],
+      "available_slots": ["Mon_11", "Mon_12", "Tue_11", "Tue_12", "Wed_10", "Wed_11", "Thu_11"],
+      "max_hours_per_week": 12
+    }
+  ],
+  "rooms": [
+    {
+      "room_id": "R101",
+      "type": "theory",
+      "capacity": 60,
+      "available_slots": ["Mon_09", "Mon_10", "Mon_11", "Mon_12", "Tue_09", "Tue_10", "Tue_11", "Tue_12", "Wed_09", "Wed_10", "Wed_11", "Wed_12", "Thu_09", "Thu_10", "Thu_11", "Thu_12"]
+    },
+    {
+      "room_id": "LAB1",
+      "type": "lab",
+      "capacity": 32,
+      "available_slots": ["Mon_11", "Mon_12", "Tue_11", "Tue_12", "Wed_11", "Wed_12", "Thu_11", "Thu_12"]
+    }
+  ],
+  "student_groups": [
+    {
+      "group_id": "G1",
+      "program": "B.Tech CS",
+      "semester": 3,
+      "major": "Computer Science",
+      "minor": "Artificial Intelligence",
+      "credit_requirements": {"min": 11, "max": 20, "major_min": 7, "minor_min": 3, "skill_min": 1},
+      "students": ["S001", "S002", "S003", "S004"],
+      "course_choices": {
+        "major": ["DSA", "OS", "CN"],
+        "minor": ["ML"],
+        "skill": ["SSP"]
+      }
+    }
+  ],
+  "time_limit": 10
+}
+

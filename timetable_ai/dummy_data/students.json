@@ -1,0 +1,9 @@
+[
+  {"student_id":"S001","name":"Alice","group":"G1","preferences":{"preferred_slots":["Mon_09","Tue_09"]}},
+  {"student_id":"S002","name":"Bob","group":"G1","preferences":{"preferred_slots":["Mon_09","Wed_09"]}},
+  {"student_id":"S003","name":"Charlie","group":"G1","preferences":{"preferred_slots":["Tue_09","Thu_09"]}},
+  {"student_id":"S004","name":"Eva","group":"G1","preferences":{"preferred_slots":["Wed_09","Thu_09"]}},
+  {"student_id":"S010","name":"David","group":"G2","preferences":{"preferred_slots":["Mon_11","Tue_11"]}},
+  {"student_id":"S011","name":"Farah","group":"G2","preferences":{"preferred_slots":["Tue_11","Wed_11"]}},
+  {"student_id":"S012","name":"George","group":"G2","preferences":{"preferred_slots":["Wed_10","Thu_10"]}}
+]

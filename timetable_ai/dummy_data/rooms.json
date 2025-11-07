@@ -1,0 +1,6 @@
+[
+  {"room_id":"R101","type":"theory","capacity":60,"available_slots":["Mon_09","Mon_10","Mon_11","Mon_12","Tue_09","Tue_10","Tue_11","Tue_12","Wed_09","Wed_10","Wed_11","Wed_12","Thu_09","Thu_10","Thu_11","Thu_12"]},
+  {"room_id":"R102","type":"theory","capacity":45,"available_slots":["Mon_09","Mon_10","Tue_09","Tue_10","Wed_09","Wed_10","Thu_09","Thu_10"]},
+  {"room_id":"LAB1","type":"lab","capacity":32,"available_slots":["Mon_11","Mon_12","Tue_11","Tue_12","Wed_11","Wed_12","Thu_11","Thu_12"]},
+  {"room_id":"LAB2","type":"lab","capacity":28,"available_slots":["Mon_09","Mon_10","Tue_10","Tue_11","Wed_10","Wed_11","Thu_10","Thu_11"]}
+]
