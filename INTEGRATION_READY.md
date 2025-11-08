@@ -13,28 +13,20 @@ Your Flask API is **production-ready** for integration with Node.js and React ap
 
 ## 🚀 Quick Start
 
-### Option 1: Use the Flask API (Recommended)
+### Use the Flask API
 
-Your Flask API (`app_flask.py`) is ready to use. To deploy it:
+Your Flask API is ready to use:
 
 1. **For Local Development:**
 ```bash
 cd ML
-python app_flask.py
+python app.py
 # API runs on http://localhost:5000
 ```
 
 2. **For Production (Render/Heroku/etc):**
-   - Rename `app_flask.py` to `app.py` temporarily, OR
-   - Update `render.yaml` and `Procfile` to use `app_flask.py`
-
-### Option 2: Use Streamlit (For Testing/Demo)
-
-```bash
-cd ML
-streamlit run app.py
-# UI runs on http://localhost:8501
-```
+   - Deploy using `render.yaml` or `Procfile`
+   - API will run on the provided port
 
 ## 📦 Integration Examples
 
@@ -118,9 +110,7 @@ function TimetableGenerator() {
 - `Procfile` - For Heroku/Render
 - Uses `gunicorn` for production server
 
-**Note:** `render.yaml` currently references `app:app`. If you want to use `app_flask.py`, either:
-- Rename `app_flask.py` back to `app.py` for deployment, OR
-- Update `render.yaml` line 7: `gunicorn app_flask:app`
+**Note:** `render.yaml` is configured to use `app:app` which is the Flask application.
 
 ## 📚 Documentation
 
@@ -145,7 +135,7 @@ function TimetableGenerator() {
 
 1. **Test the API locally:**
    ```bash
-   python ML/app_flask.py
+   python ML/app.py
    # Then test with: python ML/test_api.py
    ```
 

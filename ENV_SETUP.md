@@ -108,7 +108,7 @@ The Flask app automatically reads from `os.environ`, so no special loading neede
 pip install python-dotenv
 ```
 
-Then add to `app_flask.py`:
+Then add to `app.py`:
 ```python
 from dotenv import load_dotenv
 load_dotenv()  # Loads .env file
@@ -164,7 +164,7 @@ If you just want to test locally, you can skip `.env` files entirely:
 
 **Flask API:**
 ```bash
-python app_flask.py
+python app.py
 # Runs on http://localhost:5000 (default)
 ```
 
@@ -179,7 +179,7 @@ const API_URL = 'http://localhost:5000';
 ### Example 1: Local Development (No .env)
 ```bash
 # Flask
-python app_flask.py  # Uses defaults
+python app.py  # Uses defaults
 
 # React
 # Set in code: const API_URL = 'http://localhost:5000';
@@ -191,7 +191,7 @@ python app_flask.py  # Uses defaults
 PORT=8080
 
 # Flask
-python app_flask.py  # Runs on port 8080
+python app.py  # Runs on port 8080
 ```
 
 ### Example 3: Production (Environment Variables in Dashboard)
@@ -211,7 +211,7 @@ python app_flask.py  # Runs on port 8080
 **Problem:** Port already in use
 - **Solution:** Change `PORT` in `.env` or set it when running:
   ```bash
-  PORT=8080 python app_flask.py
+  PORT=8080 python app.py
   ```
 
 ---

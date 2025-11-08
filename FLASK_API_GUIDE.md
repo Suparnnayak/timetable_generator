@@ -1,13 +1,13 @@
 # Complete Flask API Guide for Node.js/React Integration
 
-Your Streamlit app has been converted to a complete REST API! All functionality is now available via JSON endpoints.
+Complete REST API for NEP Timetable Generator! All functionality is available via JSON endpoints.
 
 ## 🎯 Quick Start
 
 ```bash
 # Start the Flask API
 cd ML
-python app_flask.py
+python app.py
 
 # API runs on http://localhost:5000
 ```
@@ -379,23 +379,9 @@ const getStudentTimetable = async (result, studentId) => {
 };
 ```
 
-## 📊 Comparison: Streamlit vs Flask API
+## 📊 Available Features
 
-| Streamlit Feature | Flask API Endpoint |
-|-------------------|-------------------|
-| Load Default Data | `GET /api/data/default` |
-| Data Summary | `POST /api/data/summary` |
-| Edit Data | `POST /api/data/update` |
-| Validate Data | `POST /api/validate` |
-| Generate Timetable | `POST /api/generate` |
-| View Assignments | `POST /api/results/assignments` |
-| View Student Timetables | `POST /api/results/students` |
-| View Faculty Timetables | `POST /api/results/faculty` |
-| View Violations | `POST /api/results/violations` |
-
-## ✅ All Features Converted!
-
-Your Streamlit app functionality is now available as REST API endpoints:
+All features are available as REST API endpoints:
 - ✅ Load default data
 - ✅ Get data summary
 - ✅ Update data sections
