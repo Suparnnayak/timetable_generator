@@ -10,7 +10,12 @@ from datetime import datetime
 from timetable_ai.dual_timetable_manager import DualTimetableManager
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for cross-origin requests
+# Enable CORS for cross-origin requests (allows all origins for frontend integration)
+CORS(app, resources={
+    r"/api/*": {"origins": "*"},
+    r"/health": {"origins": "*"},
+    r"/": {"origins": "*"}
+})
 
 # Configuration
 app.config['JSON_SORT_KEYS'] = False
